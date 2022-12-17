@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap'); 
-@import "./function","./mixins","./variable";
+@import "./function","./mixins","./variable","./extends";
 body{
     margin:0px;
     font-family: $font-family;
@@ -11,4 +11,20 @@ body{
         &__title{
            @include title($color:white);
         }
+        &__desc{
+            @include desc($font-size:20px,$color:white);
+        }
+        &__button{@include button($margin:30px 0px);
+        @extend %btn;}
+    }}.service-card{@include flex();
+        padding:7% 5%;
+        flex-wrap: wrap;
+    &-item{@extend %card;
+    @include card-item($text-color:$black,$bg-color:$blue-gradient);
+         &__title{@include sub_heading($font-size:23px,$font-color:$black);}
+        &__desc{@include paragraph($font-size:14px,$font-color:$black,$line-height:1.5em);}
+    &__button{
+        @extend %btn;
+        @include button($margin:0px,$color:$white);
     }}}
+    }

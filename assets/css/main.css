@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
+body .hero-banner__content__button, body .service-card-item__button {
+  cursor: pointer;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500; }
+
+body .service-card-item {
+  padding: 25px 25px;
+  margin: 10px 30px;
+  text-align: center;
+  width: 33.33%;
+  border-radius: 10px;
+  width: 310px; }
+
 body {
   margin: 0px;
   font-family: "Inter", sans-serif; }
@@ -24,5 +39,44 @@ body {
         @media screen and (max-width: 600px) {
           body .hero-banner__content__title {
             font-size: 33px; } }
+      body .hero-banner__content__desc {
+        font-size: 20px;
+        color: white; }
+      body .hero-banner__content__button {
+        margin: 30px 0px;
+        color: white;
+        background-image: linear-gradient(to right top, #9762fd, #9060fd, #895efd, #825dfd, #7a5bfd); }
+        body .hero-banner__content__button:hover {
+          background-image: linear-gradient(to left bottom, #61d5b8, #44cfc4, #26c8cf, #0fc1d8, #1eb8de);
+          box-shadow: 10px 5px 20px #090a0a37; }
+  body .service-card {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    margin: 0px 0px;
+    padding: 7% 5%;
+    flex-wrap: wrap; }
+    body .service-card-item {
+      color: black;
+      background-image: linear-gradient(to left bottom, #61d5b8, #44cfc4, #26c8cf, #0fc1d8, #1eb8de); }
+      body .service-card-item:hover {
+        box-shadow: 10px 5px 20px #090a0a37; }
+      body .service-card-item__title {
+        font-size: 23px;
+        font-weight: 500;
+        color: black; }
+      body .service-card-item__desc {
+        font-size: 14px;
+        line-height: 1.5em;
+        color: black; }
+      body .service-card-item__button {
+        margin: 0px;
+        color: white;
+        background-image: linear-gradient(to right top, #9762fd, #9060fd, #895efd, #825dfd, #7a5bfd); }
+        body .service-card-item__button:hover {
+          background-image: linear-gradient(to left bottom, #61d5b8, #44cfc4, #26c8cf, #0fc1d8, #1eb8de);
+          box-shadow: 10px 5px 20px #090a0a37; }
 
 /*# sourceMappingURL=main.css.map */
