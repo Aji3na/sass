@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap'); 
 @import "./function","./mixins","./variable";
-
 body{
     margin:0px;
-    font-family: $font-family;}
+    font-family: $font-family;
+    .hero-banner{
+        @include banner(100vh);
+        background-image: url("https://www.vmaker.com/assets/img/vmaker-home-banner.png");
+    &__content{
+        @include flex($direction:column,$margin:0px 10%);
+        &__title{
+           @include title($color:white);
+        }
+    }}}
