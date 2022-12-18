@@ -1,0 +1,4 @@
+
+@mixin background-img($bg-img:"vmaker-home-banner"){
+    background-image: url("https://www.vmaker.com/assets/img/#{$bg-img}.png");
+}

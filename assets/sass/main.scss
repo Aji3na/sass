@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap'); 
-@import "./function","./mixins","./variable","./extends";
+@import "./function","./mixins","./variable","./extends","./interpolation";
 body{
     margin:0px;
     font-family: $font-family;
     .hero-banner{
         @include banner(100vh);
-        background-image: url("https://www.vmaker.com/assets/img/vmaker-home-banner.png");
+        @include background-img($bg-img:"vmaker-home-banner");
     &__content{
         @include flex($direction:column,$margin:0px 10%);
         &__title{
