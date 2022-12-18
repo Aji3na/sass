@@ -1,0 +1,5 @@
+@import "./variable";
+@function global-theme-color($g-color:"dark"){
+    @return map-get($global-color, $g-color);
+}
+
