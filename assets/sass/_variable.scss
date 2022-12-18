@@ -7,3 +7,10 @@ $blue-gradient:linear-gradient(to left bottom, #61d5b8, #44cfc4, #26c8cf, #0fc1d
 $white:white;
 $black:black;
 $shadow:10px 5px 20px #090a0a37;
+
+$global-color:(
+    "primary-color":#9762fd,
+"secondary-color":#61d5b8,
+light:white,
+dark:black
+);
